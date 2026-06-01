@@ -1,0 +1,1 @@
+this is my ecommerce project built from scratch using reajs and other tools, i am mr christian nwanagba the owner
