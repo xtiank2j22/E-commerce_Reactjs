@@ -136,9 +136,11 @@ header .part3 .circle svg {
   height: 20px;
 }
 /* the all carttab css */
+nav .navpart1{max-width: 20% !important; flex: 0 0 20% !important;}
+nav .navpart2{max-width: 80% !important; flex: 0 0 80% !important;}
 nav .allCatTab {
   background: #631e3f;
-  padding: 8px 20px !important;
+  padding: 8px 15px !important;
   border-radius:30px;
 }
 nav .allCatTab *{
@@ -148,5 +150,33 @@ nav .allCatTab:hover{
   background:#ae517e
 }
 nav .allCatTab .text{
-  font-weight:600;
+  font-weight:500;
+}
+nav .allCatTab .icon1 svg{
+  font-size:20px !important;
+}
+nav .allCatTab .icon2 svg{
+  font-size:15px !important;
+}
+nav .navpart2 ul{
+  margin-bottom: 0px;
+}
+nav .navpart2 ul li a{
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+nav .navpart2 ul li a svg{
+  font-size: 14px;
+}
+nav .navpart2 ul li a:hover{
+  background: rgba(91, 15, 91, 0.201);
+  color: rgb(120, 9, 63);
 }
