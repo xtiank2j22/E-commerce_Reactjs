@@ -15,6 +15,9 @@ body {
     max-width:1200px;
   }
 }
+::-webkit-scrollbar{width: 8px !important;height: 8px !important;}
+::-webkit-scrollbar-thumb{background: #ccc !important;}
+::-webkit-scrollbar-track{background: transparent !important;}
 /* the header section */
 .container {
   max-width: 90% !important;
@@ -37,68 +40,73 @@ body {
 }
 .headerWrapper .header .part2 .countryDrop {
   width: 170px;
-  height: 60px;
+  height: 40px;
   min-width: 170px;
-  color: #000 !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 7px !important;
-  padding: 10px 15px !important;
+  
 }
-.headerWrapper .header .part2 .countryDrop {
+.headerWrapper .header .part2 .countryDrop .info{
   text-align: left;
   justify-content: flex-start !important;
+  padding: 3px 5px !important;
+}
+.headerWrapper .header .part2 .countryDrop .angle_cont svg{
+  opacity: 0.8;
+  color: #7a0707 !important;
+  margin-left: 58px !important;
+
 }
 .headerWrapper .header .part2 .countryDrop .label {
-  font-size: 12px !important;
+  font-size: 10px !important;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.3) !important;
 }
 .headerWrapper .header .part2 .countryDrop .name {
-  font-size: 14px !important;
+  font-size: 12px !important;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.8) !important;
   font-weight: 700;
   line-height: 16px;
 }
-.headerWrapper .header .part2 .countryDrop span .ml-auto svg {
-  opacity: 0.7;
-}
+
 /* search bar starts here */
-header .headersearch {
+.headersearch {
   width: 60% !important;
-  height: 60px;
+  height: 40px;
   background: #f8f8f9;
-  padding: 5px;
+  padding: 2px;
   position: relative !important;
   border-radius: 5px !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
-header .headersearch input {
+.headersearch input {
   background: transparent !important;
   outline: none !important;
-  font-size: 15px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 45px;
+  height: 35px;
   padding: 0px 25px !important;
   border: none !important;
 }
-header .headersearch input::-webkit-input-placeholder {
+.headersearch input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3) !important;
 }
-header .headersearch button {
+.headersearch button {
   position: absolute;
-  top: 10px;
+  top:6px;
   right: 15px;
   z-index: 100;
-  min-width: 40px !important;
-  height: 45px !important;
-  width: 40px !important;
-  border-radius: 50% !important;
+  min-width: 30px !important;
+  height: 25px !important;
+  width: 25px !important;
+  border-radius: 30% !important;
   color: #000;
 }
-header .headersearch button svg {
+.headersearch button svg {
   font-size: 20px;
+  opacity: 0.8;
 }
 header .part3 .circle {
   align-items: center;
@@ -134,6 +142,41 @@ header .part3 .circle svg {
   color: white;
   width: 20px;
   height: 20px;
+}
+.locationModel1 .MuiPaper-elevation {
+  padding:25px;
+  position: relative;
+}
+.locationModel1 .countryList{
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  margin-left: -8%;
+}
+.locationModel1 .countryList li{
+  width: 100%;
+  list-style: none;
+}
+.locationModel1 .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start !important;
+  padding: 10px 10px !important;
+}
+.locationModel1 .close_{
+  position:absolute;
+  top:10px;
+  right: 10px;
+  color: #000 !important;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+.locationModel1 .close_ svg{
+  font-size: 22px !important;
 }
 /* the all carttab css */
 nav .navpart1{max-width: 20% !important; flex: 0 0 20% !important;}
