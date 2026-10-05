@@ -4,23 +4,38 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body {
-  font-family: "lato", sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 16px !important;
 }
 .bg-dark-hourse-blood {
   background-color: rgb(120, 9, 63);
 }
-@media (min-width:1300px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl{
-    max-width:1200px;
+@media (min-width: 1300px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
   }
 }
-::-webkit-scrollbar{width: 8px !important;height: 8px !important;}
-::-webkit-scrollbar-thumb{background: #ccc !important;}
-::-webkit-scrollbar-track{background: transparent !important;}
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
 /* the header section */
 .container {
   max-width: 90% !important;
+}
+.headerWrapper  {
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  padding-bottom: 10px;
 }
 .headerWrapper .top-strip {
   padding: 8px 0px;
@@ -39,23 +54,20 @@ body {
   width: 100%;
 }
 .headerWrapper .header .part2 .countryDrop {
-  width: 170px;
+  width: 180px;
   height: 40px;
   min-width: 170px;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 7px !important;
-  
 }
-.headerWrapper .header .part2 .countryDrop .info{
+.headerWrapper .header .part2 .countryDrop .info {
   text-align: left;
   justify-content: flex-start !important;
-  padding: 3px 5px !important;
 }
-.headerWrapper .header .part2 .countryDrop .angle_cont svg{
+.headerWrapper .header .part2 .countryDrop .angle_cont svg {
   opacity: 0.8;
   color: #7a0707 !important;
   margin-left: 58px !important;
-
 }
 .headerWrapper .header .part2 .countryDrop .label {
   font-size: 10px !important;
@@ -63,11 +75,11 @@ body {
   color: rgba(0, 0, 0, 0.3) !important;
 }
 .headerWrapper .header .part2 .countryDrop .name {
-  font-size: 12px !important;
+  font-size: 10px !important;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.8) !important;
-  font-weight: 700;
-  line-height: 16px;
+  font-weight: 800;
+  line-height: 10px;
 }
 
 /* search bar starts here */
@@ -95,7 +107,7 @@ body {
 }
 .headersearch button {
   position: absolute;
-  top:6px;
+  top: 6px;
   right: 15px;
   z-index: 100;
   min-width: 30px !important;
@@ -144,30 +156,39 @@ header .part3 .circle svg {
   height: 20px;
 }
 .locationModel1 .MuiPaper-elevation {
-  padding:25px;
+  padding: 25px;
   position: relative;
 }
-.locationModel1 .countryList{
+.locationModel1 .countryList {
   margin-bottom: 0px;
   max-height: 400px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   margin-left: -8%;
 }
-.locationModel1 .countryList li{
+.locationModel1 .countryList li {
   width: 100%;
   list-style: none;
 }
-.locationModel1 .countryList li button{
+.locationModel1 .countryList li button {
   width: 100%;
   text-transform: capitalize !important;
   color: #000 !important;
   justify-content: flex-start !important;
   padding: 10px 10px !important;
 }
-.locationModel1 .close_{
-  position:absolute;
-  top:10px;
+.locationModel1 .countryList li button:hover {
+  background: #631e3f !important;
+  color: #fff !important;
+}
+.locationModel1 .countryList li button.active {
+  background: #631e3f84 !important;
+  color: #070104f8 !important;
+  font-weight: 600 !important;
+}
+.locationModel1 .close_ {
+  position: absolute;
+  top: 10px;
   right: 10px;
   color: #000 !important;
   min-width: 40px !important;
@@ -175,51 +196,59 @@ header .part3 .circle svg {
   height: 40px !important;
   border-radius: 50% !important;
 }
-.locationModel1 .close_ svg{
+.locationModel1 .close_ svg {
   font-size: 22px !important;
 }
 /* the all carttab css */
-nav .navpart1{max-width: 20% !important; flex: 0 0 20% !important;}
-nav .navpart2{max-width: 80% !important; flex: 0 0 80% !important;}
+nav .navpart1 {
+  max-width: 20% !important;
+  flex: 0 0 20% !important;
+}
+nav .navpart2 {
+  max-width: 80% !important;
+  flex: 0 0 80% !important;
+}
 nav .allCatTab {
   background: #631e3f;
   padding: 8px 15px !important;
-  border-radius:30px;
+  border-radius: 30px;
 }
-nav .allCatTab *{
+nav .allCatTab * {
   color: #fff;
 }
-nav .allCatTab:hover{
-  background:#ae517e
+nav .allCatTab:hover {
+  background: #ae517e;
 }
-nav .allCatTab .text{
-  font-weight:500;
+nav .allCatTab .text {
+  font-weight: 500;
 }
-nav .allCatTab .icon1 svg{
-  font-size:20px !important;
+nav .allCatTab .icon1 svg {
+  font-size: 20px !important;
 }
-nav .allCatTab .icon2 svg{
-  font-size:15px !important;
+nav .allCatTab .icon2 svg {
+  font-size: 15px !important;
 }
-nav .navpart2 ul{
+nav .navpart2 ul {
   margin-bottom: 0px;
 }
-nav .navpart2 ul li a{
-  font-size: 14px;
-  font-weight: 600;
+nav .navpart2 ul li a {
   text-decoration: none;
-  color: rgba(0,0,0,0.5);
+}
+nav .navpart2 ul li a button {
+  font-size: 13px !important;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 8px 13px;
+  padding: 8px 15px;
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
 }
-nav .navpart2 ul li a svg{
+nav .navpart2 ul li a svg {
   font-size: 14px;
 }
-nav .navpart2 ul li a:hover{
-  background: rgba(91, 15, 91, 0.201);
-  color: rgb(120, 9, 63);
+nav .navpart2 ul li a button:hover {
+  background: rgba(120, 9, 63, 0.332) !important;
+  color: rgb(120, 9, 63) !important;
 }
